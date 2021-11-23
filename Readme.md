@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Сергей Ботов](https://up.htmlacademy.ru/adaptive/24/user/1838605).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
 
 ---
 
