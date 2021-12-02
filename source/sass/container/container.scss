@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  // Пока не понял как работает
+  @media (min-width: 780px) {
+    max-width: 320px
+   }
+}

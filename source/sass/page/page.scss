@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
+}
