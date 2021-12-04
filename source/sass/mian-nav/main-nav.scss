@@ -17,6 +17,7 @@
 
 .main-nav__link {
   display: inline-block;
+  width: 320px;
   padding: 15px 0;
   font-size: 18px;
   line-height: 32px;
@@ -24,4 +25,6 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  background-color: #283645;
 }

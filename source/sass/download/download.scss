@@ -1,6 +1,8 @@
+$download-bg: #1d2631;
+
 .download {
   display: grid;
-  background-color: #1d2631;
+  padding-top: 38px;
   color: #ffffff;
 }
 
@@ -12,8 +14,20 @@
   text-align: center;
 }
 
-.download__button {
+.download__phone-img {
+  display: block;
+}
 
+.download__button {
+  margin-bottom: 32px;
+}
+
+.download__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  background-color: #1d2631;
 }
 
 .downlaod__list {
@@ -21,12 +35,17 @@
   flex-wrap: wrap;
   min-width: 204px;
   margin: 0;
+  margin-bottom: 28px;
   padding: 0;
   list-style-type: none;
 }
 
 .download__item {
-
+  // Временные
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-color: #ffffff;
 }
 
 .download__market-button {

@@ -1,1 +1,7 @@
 $body-color: grey;
+$page-side-paddings: 20px;
+
+@mixin reset-side-paddings {
+  margin-left: -1 * $page-side-paddings;
+  margin-right: -1 * $page-side-paddings;
+}
