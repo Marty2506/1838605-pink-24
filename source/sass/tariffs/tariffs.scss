@@ -3,11 +3,13 @@
 }
 
 .tariffs__wrapper {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tariffs__table {
-
+  margin-bottom: 45px;
 }
 
 .tariffs__row {
@@ -17,28 +19,58 @@
 .tariffs__item {
   background-color: #283645;
   color: #ffffff;
+  line-height: 30px;
 }
 
-.tarrifs__item--hit {
-
-}
-
-.tarriffs__name {
+.tariffs__item--hit {
 
 }
 
-.tarriffs__price {
+.tariffs__name {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
 
+.tariffs__price {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .tariffs__feature {
-
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .tariffs__feature--yes {
+  position: relative;
 
+  // Временно вместо иконки
+  &::after {
+    content: "Да";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 31px;
+    height: 21px;
+  }
 }
 
 .tariffs__feature--no {
+  position: relative;
 
+  // Временно вместо иконки
+  &::after {
+    content: "Нет";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.tariffs__toggles {
+  margin-bottom: 45px;
 }

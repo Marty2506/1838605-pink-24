@@ -11,7 +11,7 @@
 }
 
 .slider__toggles {
-
+  align-items: center;
 }
 
 .slider__toggle {
@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  border: 3px solid #ffffff;
+  border: none;
   border-radius: 50%;
   background-color: rgba(40, 54, 69, 0.3);
   cursor: pointer;
@@ -32,5 +32,5 @@
 
 .slider__toggle--current {
   background-color: transparent;
-  border-color: #000000;
+  border: 3px solid #000000;
 }
