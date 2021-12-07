@@ -1,22 +1,35 @@
 .button {
   display: inline-block;
   padding: 10px 0;
+  box-sizing: border-box;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+
+  &:disabled {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1;
+  }
 }
 
 .button--download {
   width: 280px;
-  box-sizing: border-box;
   padding: 15.5px 0;
-  background-color: transparent;
-  text-transform: none;
+  color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 29px;
+}
+
+.button--upload {
+  width: 280px;
+  padding: 15.5px 0;
+  color: $pink-color;
+  border: 3px solid $pink-color;
+  border-radius: 30px;
 }

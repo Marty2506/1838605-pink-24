@@ -20,9 +20,27 @@
 }
 
 .page__h1 {
+  display: block;
+  width: 230px;
+  height: 171px;
   margin: 0;
   padding: 0;
+  padding-top: 36px;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page__advice {
+  display: block;
+  margin: 0;
+  padding-top: 54px;
+  margin-bottom: 55px;
+}
+
+.page__text {
+  line-height: 30px;
+  text-align: center;
 }

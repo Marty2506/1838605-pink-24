@@ -12,7 +12,15 @@
 }
 
 .main-nav__item {
+  align-items: center;
+}
 
+.main-nav__item--head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__link {
