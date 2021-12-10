@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Главная</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav container">
-          <div class="main-nav__item main-nav__item--head container">
+        <div class="container">
+          <div class="main-nav__item main-nav__item--head">
             <a class="main-nav__logo logo" href="index.html">
               <svg class="logo__text logo__text--white" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -22,10 +23,12 @@
               <span class="visually-hidden">Открыть меню.</span>
             </button>
           </div>
-          <div class="main-nav__wrapper">
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper container">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link">Главная</a>
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="gallery.html">Фотографии</a>
@@ -34,7 +37,7 @@
                 <a class="main-nav__link" href="contest.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="">HTML Academy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -47,8 +50,12 @@
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачивание приложения</h2>
-          <b class="download__slogan page__h1 container">Взгляните на жизнь иначе!</b>
-          <img class="download__phone-img container" src="./img/download-back-mobile.png" alt="Показывает как приложение расскаршивает фотографию." width="320" height="286">
+          <div class="download__slogan container">
+            <b class="page__h1">Взгляните на жизнь иначе!</b>
+          </div>
+          <!-- <div class="container">
+            <img class="download__phone-img" src="./img/download-back-mobile.png" alt="Показывает как приложение расскаршивает фотографию." width="320" height="286">
+          </div> -->
           <div class="download__list-wrapper container">
             <div class="download__button">
               <a class="button button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
@@ -77,14 +84,14 @@
         </div>
       </section>
 
-      <section class="about section-background">
+      <section class="about">
         <div class="about__wrapper">
           <h2 class="visually-hidden">Информация о приложении</h2>
           <div class="about__slogan-wrapper container">
             <p class="about__slogan">Устали от серости мегаполиса?</p>
             <p class="about__slogan">Нам есть, что вам предложить!</p>
           </div>
-          <ul class="about__list container">
+          <ul class="about__list container section-background">
             <li class="about__item">
               <b class="about__item-title">Поднимает настроение</b>
               <p class="about__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -126,62 +133,64 @@
       </section>
 
       <section class="tariffs section-background">
-        <div class="tariffs__wrapper">
+        <div class="tariffs__wrapper container">
           <h2 class="visually-hidden">Тарифы</h2>
-          <table class="tariffs__table">
-            <caption class="visually-hidden">Список тарифов</caption>
-            <tr class="tariffs__row">
-              <th></th>
-              <th class="tariffs__item">
-                <span class="tarriffs__name">База</span>
-                <span class="tariffs__price">1,99 USD</span>
-              </th>
-              <th class="tariffs__item tariffs__item--hit">
-                <span class="tarriffs__name">Стандарт</span>
-                <span class="tariffs__price">3,99 USD</span>
-              </th>
-              <th class="tariffs__item">
-                <span class="tarriffs__name">Анлим</span>
-                <span class="tariffs__price">9,99 USD</span>
-              </th>
-            </tr>
-            <tr class="tariffs__row">
-              <td class="tariffs__feature">Розовый фильтр</td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-            <tr class="tariffs__row">
-              <td class="tariffs__feature">Смайлики</td>
-              <td class="tariffs__feature--no">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-            <tr class="tariffs__row">
-              <td class="tariffs__feature">Комментарии</td>
-              <td class="tariffs__feature--no">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tariffs__feature--no">
-                <span class="visually-hidden">Нет</span>
-              </td>
-              <td class="tariffs__feature--yes">
-                <span class="visually-hidden">Да</span>
-              </td>
-            </tr>
-          </table>
+          <div class="tariffs__table-wrapper">
+            <table class="tariffs__table">
+              <caption class="visually-hidden">Список тарифов</caption>
+              <tr class="tariffs__row">
+                <th class="tariffs__item"></th>
+                <th class="tariffs__item">
+                  <span class="tarriffs__name">База</span>
+                  <span class="tariffs__price">1,99 USD</span>
+                </th>
+                <th class="tariffs__item tariffs__item--hit">
+                  <span class="tarriffs__name">Стандарт</span>
+                  <span class="tariffs__price">3,99 USD</span>
+                </th>
+                <th class="tariffs__item">
+                  <span class="tarriffs__name">Анлим</span>
+                  <span class="tariffs__price">9,99 USD</span>
+                </th>
+              </tr>
+              <tr class="tariffs__row">
+                <td class="tariffs__feature tariffs__feature--name">Розовый фильтр</td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+              <tr class="tariffs__row">
+                <td class="tariffs__feature tariffs__feature--name">Смайлики</td>
+                <td class="tariffs__feature tariffs__feature--no">
+                  <span class="visually-hidden ">Нет</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+              <tr class="tariffs__row">
+                <td class="tariffs__feature tariffs__feature--name">Комментарии</td>
+                <td class="tariffs__feature tariffs__feature--no">
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--no">
+                  <span class="visually-hidden">Нет</span>
+                </td>
+                <td class="tariffs__feature tariffs__feature--yes">
+                  <span class="visually-hidden">Да</span>
+                </td>
+              </tr>
+            </table>
+          </div>
           <div class="tariffs__toggles slider__toggles">
             <button class="slider__toggle" type="button">
               <span class="visually-hidden">1</span>

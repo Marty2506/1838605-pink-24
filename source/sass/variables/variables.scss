@@ -1,8 +1,13 @@
 $page-side-paddings: 20px;
 $body-second-bg: #f2f2f2;
 $pink-color: #d22856;
+$download-bg: #1d2631;
+$font-color-typical: #283645;
+$page-header-bg: rgba(0, 0, 0, 0.3);
+$user-post-bg: $body-second-bg;
 
-@mixin reset-side-paddings {
-  margin-left: -1 * $page-side-paddings;
-  margin-right: -1 * $page-side-paddings;
-}
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

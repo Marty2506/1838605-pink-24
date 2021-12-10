@@ -2,14 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк: Фотографии</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav">
-          <div class="main-nav__item main-nav__item--head container">
+        <div class="container">
+          <div class="main-nav__item main-nav__item--head">
             <a class="main-nav__logo logo" href="index.html">
               <svg class="logo__text logo__text--white" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"/>
@@ -22,7 +23,9 @@
               <span class="visually-hidden">Открыть меню.</span>
             </button>
           </div>
-          <div class="main-nav__wrapper container visually-hidden">
+        </div>
+        <nav class="main-nav" hidden>
+          <div class="main-nav__wrapper container">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -34,7 +37,7 @@
                 <a class="main-nav__link" href="contest.html">Конкурс</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="">HTML Academy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -43,15 +46,17 @@
     </header>
 
     <main class="page-inner">
-      <h1 class="page__h1 container">Фотографии пользователей</h1>
+      <div class="page__h1-wrapper container">
+        <h1 class="page__h1">Фотографии пользователей</h1>
+      </div>
       <!-- Добавил обертку, чтобы сделать белый фон поверх картинки с домом. Это норм? Можно по-другмоу как-то?-->
       <div class="page-inner__wrapper">
         <p class="page__advice page__text container">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
         <section class="gallery">
           <h2 class="visually-hidden">Галерея</h2>
-          <div class="gallery__wrapper">
-            <ol class="gallery__list container">
+          <div class="gallery__wrapper container">
+            <ol class="gallery__list">
               <li class="gallery__item">
                 <div class="user-post user-post--panorama user-post--panorama-of-the-day">
                   <img class="user-post__photo" src="./img/gallery/panorama-mobile.jpg" alt="" width="320" height="137">
@@ -136,29 +141,31 @@
 
         <section class="upload section-background">
           <h2 class="visually-hidden">Загрузить свое изображение</h2>
-          <div class="upload__wrapper container">
-            <img class="upload__image" src="./img/gallery/upload-mobile.jpg" alt="" width="280" height="374">
-            <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="upload__range-wrapper">
-                <label class="visually-hidden" for="image-crop">Обрезка изображения</label>
-                <input class="upload__range upload__range--crop" type="range" id="image-crop" name="image-crop" min="0" max="255">
-              </div>
-              <div class="upload__range-wrapper">
-                <label class="visually-hidden" for="image-fill">Заливка изображения</label>
-                <input class="upload__range upload__range--fill" type="range" id="image-fill" name="image-fill" min="0" max="255">
-              </div>
-              <div class="upload__range-wrapper">
-                <label class="visually-hidden" for="image-contrast">Контраст изображения</label>
-                <input class="upload__range upload__range--contrast" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
-              </div>
-              <!-- Кнопки или ссылки? Должны быть в форме? -->
-              <div class="upload__button-wrapper">
-                <button class="button button--upload upload__button upload__button--post" type="submit">Запостить</button>
-              </div>
-              <div class="upload__button-wrapper">
-                <button class="button button--upload upload__button upload__button--reset" type="reset" disabled>Отмена</button>
-              </div>
-            </form>
+          <div class="container">
+            <div class="upload__wrapper">
+              <img class="upload__image" src="./img/gallery/upload-mobile.jpg" alt="" width="280" height="374">
+              <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="upload__range-wrapper">
+                  <label class="visually-hidden" for="image-crop">Обрезка изображения</label>
+                  <input class="upload__range upload__range--crop" type="range" id="image-crop" name="image-crop" min="0" max="255">
+                </div>
+                <div class="upload__range-wrapper">
+                  <label class="visually-hidden" for="image-fill">Заливка изображения</label>
+                  <input class="upload__range upload__range--fill" type="range" id="image-fill" name="image-fill" min="0" max="255">
+                </div>
+                <div class="upload__range-wrapper">
+                  <label class="visually-hidden" for="image-contrast">Контраст изображения</label>
+                  <input class="upload__range upload__range--contrast" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
+                </div>
+                <!-- Кнопки или ссылки? Должны быть в форме? -->
+                <div class="upload__button-wrapper">
+                  <button class="button button--upload upload__button upload__button--post" type="submit">Запостить</button>
+                </div>
+                <div class="upload__button-wrapper">
+                  <button class="button button--upload upload__button upload__button--reset" type="reset" disabled>Отмена</button>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </div>

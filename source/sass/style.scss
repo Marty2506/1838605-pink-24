@@ -1,7 +1,9 @@
 @import "./variables/variables.scss";
+@import "./mixin/mixin.scss";
 @import "./fonts/fonts.scss";
 //
 @import "./visually-hidden/visually-hidden.scss";
+@import "./container/container.scss";
 @import "./page/page.scss";
 @import "./button/button.scss";
 @import "./slider/slider.scss";
@@ -25,6 +27,3 @@
 @import "./contest-form/contest-form.scss";
 @import "./group/group.scss";
 
-
-//
-@import "./container/container.scss";

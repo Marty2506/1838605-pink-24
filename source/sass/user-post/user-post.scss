@@ -1,12 +1,9 @@
-$user-post-bg: $body-second-bg;
-
 .user-post {
   display: grid;
-  width: 200px;
 }
 
 .user-post__photo {
-
+  justify-self: center;
 }
 
 .user-post__wrapper {
