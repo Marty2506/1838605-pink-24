@@ -5,6 +5,13 @@
 
 .page-header__wrapper {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: $page-header-bg;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
