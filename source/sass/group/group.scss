@@ -1,0 +1,48 @@
+.group {
+
+}
+
+.group__list {
+  // display: grid;
+  // gap: 47px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.group__item {
+  width: 100%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 47px;
+  }
+}
+
+.group__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 22px;
+}
+
+.group__control-input {
+
+}
+
+.group__control-mark {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+}
+
+.group__control-input[type="radio"] + .group__control-mark{
+  border-radius: 50%;
+}
+
+.group__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}

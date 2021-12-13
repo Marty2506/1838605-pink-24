@@ -1,0 +1,45 @@
+.user-post {
+  display: grid;
+}
+
+.user-post__photo {
+  justify-self: center;
+}
+
+.user-post__wrapper {
+  display: grid;
+  gap: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: $user-post-bg;
+}
+
+.user-post__name {
+  font-weight: 700;
+}
+
+.user-post__time {
+  font-size: 12px;
+}
+
+.user-post__text {
+  margin: 0;
+}
+
+.user-post__likes {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $pink-color;
+}
+
+.user-post__likes-counter {
+
+}
+
+.user-post--panorama .user-post__photo{
+  @include reset-side-paddings;
+}

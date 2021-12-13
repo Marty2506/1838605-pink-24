@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+@import "./variables/variables.scss";
+@import "./mixin/mixin.scss";
+@import "./fonts/fonts.scss";
+//
+@import "./visually-hidden/visually-hidden.scss";
+@import "./container/container.scss";
+@import "./page/page.scss";
+@import "./button/button.scss";
+@import "./slider/slider.scss";
+@import "./toggle/toggle.scss";
+@import "./section-background/section-background.scss";
+@import "./page-header/page-header.scss";
+@import "./logo/logo.scss";
+@import "./mian-nav/main-nav.scss";
+@import "./download/download.scss";
+@import "./about/about.scss";
+@import "./reviews/reviews.scss";
+@import "./tariffs/tariffs.scss";
+@import "./contacts/contacts.scss";
+@import "./page-footer/page-footer.scss";
+@import "./social/social.scss";
+@import "./copyright/copyright.scss";
+@import "./page-inner/page-inner.scss";
+@import "./gallery/gallery.scss";
+@import "./user-post/user-post.scss";
+@import "./upload/upload.scss";
+@import "./contest-form/contest-form.scss";
+@import "./group/group.scss";
+

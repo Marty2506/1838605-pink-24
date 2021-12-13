@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: $page-side-paddings;
+  padding-left: $page-side-paddings;
+  box-sizing: border-box;
+
+  // Пока не понял как работает
+  // @media (min-width: 780px) {
+  //   width: 320px;
+  //  }
+}

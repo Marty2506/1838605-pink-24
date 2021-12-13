@@ -1,0 +1,67 @@
+.download {
+  color: #ffffff;
+}
+
+.download__wrapper {
+  // background-image: url("../img/back-mobile.jpg");
+  // background-repeat: no-repeat;
+  // background-position-x: center;
+}
+
+.download__slogan {
+  display: block;
+  width: 280px;
+  height: 461px;
+  padding-top: 95px;
+  box-sizing: border-box;
+  // margin-bottom: 179px;
+  text-align: center;
+}
+
+.download__phone-img {
+  display: block;
+}
+
+.download__button {
+  margin-bottom: 32px;
+}
+
+.download__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  background-color: #1d2631;
+}
+
+.downlaod__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.download__item {
+  // Временные
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  background-color: #ffffff;
+}
+
+.download__market-button {
+  color: #ffffff;
+}
+
+.download__info-wrapper {
+  // margin: 0 auto;
+}
+
+.download__info {
+  display: inline-block;
+  text-align: center;
+}
+

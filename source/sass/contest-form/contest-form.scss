@@ -1,0 +1,79 @@
+.contest-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__name-wrapper {
+
+}
+
+.contest-form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 30px;
+  font-weight: 400;
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
+.contest-form__label-text {
+  display: block;
+  padding-left: 23px;
+  text-transform: uppercase;
+  color: $pink-color;
+}
+
+.contest-form__field {
+  padding: 20px 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+}
+
+.contest-form__name-wrapper {
+  margin-bottom: 44px;
+}
+
+.contest-form__group {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding-bottom: 44px;
+}
+
+.contest-form__group--contacts {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.contest-form__group-name {
+  float: left;
+  padding-top: 42px;
+  padding-bottom: 44px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $pink-color;
+}
+
+.contest-form__button-wrapper {
+  margin-bottom: 46px;
+}
+
+.contest-form__small {
+  display: block;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contest-form__small span {
+  color: $pink-color;
+}
+

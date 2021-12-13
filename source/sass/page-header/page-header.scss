@@ -1,0 +1,10 @@
+.page-header {
+  z-index: 1;
+  // padding-top: 22px;
+}
+
+.page-header__wrapper {
+  position: absolute;
+  width: 100%;
+  background-color: $page-header-bg;
+}

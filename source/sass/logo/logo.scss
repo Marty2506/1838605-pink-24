@@ -1,0 +1,19 @@
+.logo {
+  text-decoration: none;
+}
+
+.logo__glasses {
+
+}
+
+.logo__text {
+
+}
+
+.logo__glasses + .logo__text {
+  margin-left: 12px;
+}
+
+.logo__text--white {
+  fill: #ffffff;
+}
