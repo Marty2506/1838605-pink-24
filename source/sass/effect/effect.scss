@@ -1,0 +1,33 @@
+.effect {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    min-width: 238px;
+    width: 238px;
+    min-height: 276px;
+    height: 276px;
+    margin-right: 60px;
+    background-image: url("../img/timer-tablet.svg");
+  }
+}
+
+.effect__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.effect__title {
+
+}
+
+.effect__text {
+
+}
