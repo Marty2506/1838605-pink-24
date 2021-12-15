@@ -34,3 +34,20 @@
   background-color: transparent;
   border: 3px solid #000000;
 }
+
+.slider__button {
+  display: inline-block;
+  width: 22px;
+  height: 41px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/arrow-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+}
+
+.slider__button--next {
+  transform: rotate(180deg);
+}

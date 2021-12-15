@@ -7,6 +7,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media(min-width: $desktop-width) {
+    margin-top: 90px;
+    padding-top: 100px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+}
+
+.reviews__list-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reviews__list {
@@ -16,9 +31,16 @@
   margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
+
+  @media(min-width: $desktop-width) {
+    width: 60%;
+  }
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
 }
 
@@ -31,7 +53,9 @@
 }
 
 .reviews__author-short-info {
-  display: none;
+  @media(max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .reviews__text {
@@ -40,10 +64,33 @@
   margin-top: 30px;
   line-height: 30px;
   text-align: center;
+
+  @media(min-width: $tablet-width) {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__toggles {
   display: flex;
   margin: 0;
+
+  @media(min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__buttons {
+  display: none;
+
+  @media(min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    display: flex;
+    transform: translateY(50%);
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
