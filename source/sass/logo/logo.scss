@@ -14,6 +14,15 @@
   margin-left: 12px;
 }
 
-.logo__text--white {
+.logo__text--header {
   fill: #ffffff;
+}
+
+.logo__glasses--header {
+  display: none;
+  fill: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }

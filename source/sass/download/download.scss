@@ -1,11 +1,23 @@
 .download {
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  // color: #ffffff;
+  color: tomato; // временно
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
 }
 
 .download__wrapper {
-  // background-image: url("../img/back-mobile.jpg");
-  // background-repeat: no-repeat;
-  // background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .download__slogan {
@@ -16,6 +28,16 @@
   box-sizing: border-box;
   // margin-bottom: 179px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    margin-bottom: 51px;
+    padding-top: 212px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 224px;
+  }
 }
 
 .download__phone-img {
@@ -30,6 +52,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding-top: 28px;
   padding-bottom: 38px;
   background-color: #1d2631;
