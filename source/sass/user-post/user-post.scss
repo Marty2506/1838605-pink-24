@@ -41,5 +41,5 @@
 }
 
 .user-post--panorama .user-post__photo{
-  @include reset-side-paddings;
+  @include reset-side-paddings();
 }

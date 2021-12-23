@@ -1,4 +1,4 @@
-@mixin reset-side-paddings {
-  margin-left: -1 * $page-side-paddings;
-  margin-right: -1 * $page-side-paddings;
+@mixin reset-side-paddings($pad: $page-side-paddings) {
+  margin-left: -1 * $pad;
+  margin-right: -1 * $pad;
 }

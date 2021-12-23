@@ -6,7 +6,12 @@
   padding-left: $page-side-paddings;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+  }
+
   @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
     padding-right: $page-side-paddings-dekstop;
     padding-left: $page-side-paddings-dekstop;
   }
