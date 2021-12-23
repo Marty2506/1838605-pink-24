@@ -8,13 +8,26 @@
 
 .gallery__list {
   display: grid;
+  justify-content: center;
   margin: 0;
   padding: 0;
   gap: 20px;
   list-style-type: none;
-  // overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 300px);
+  }
+
 }
 
 .gallery__item {
 
+}
+
+.gallery__item--panorama {
+  grid-column: 1 / -1;
 }
