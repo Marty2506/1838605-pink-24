@@ -4,7 +4,7 @@
 
 .main-nav__wrapper {
   @media (max-width: $desktop-width) {
-    @include reset-side-paddings;
+    @include reset-side-paddings();
   }
 }
 
