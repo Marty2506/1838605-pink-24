@@ -32,10 +32,19 @@
   color: $pink-color;
   border: 3px solid $pink-color;
   border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
 .button--form {
   width: 280px;
+  min-width: 280px;
   padding: 15.5px 0;
   color: #ffffff;
   text-transform: uppercase;

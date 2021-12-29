@@ -1,4 +1,20 @@
-@mixin reset-side-paddings {
-  margin-left: -1 * $page-side-paddings;
-  margin-right: -1 * $page-side-paddings;
+@mixin reset-side-paddings($pad: $page-side-paddings) {
+  margin-left: -1 * $pad;
+  margin-right: -1 * $pad;
+}
+
+@mixin hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin make-form-border {
+  border: 2px solid $grey-border;
+  border-radius: 1px;
 }
