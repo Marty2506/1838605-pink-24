@@ -1,6 +1,5 @@
 .download {
-  // color: #ffffff;
-  color: tomato; // временно
+  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -15,11 +14,9 @@
 
 .download__slogan {
   display: block;
-  width: 280px;
   height: 461px;
   padding-top: 95px;
   box-sizing: border-box;
-  // margin-bottom: 179px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
