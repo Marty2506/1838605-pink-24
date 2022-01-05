@@ -1,27 +1,46 @@
 .effect {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+  // display: flex;
+  // align-items: center;
+  padding-top: 54px;
+  padding-bottom: 67px;
 
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 
-  &::before {
-    display: block;
-    content: "";
-    min-width: 238px;
-    width: 238px;
-    min-height: 276px;
-    height: 276px;
-    margin-right: 60px;
-    background-image: url("../img/timer-tablet.svg");
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
+    background-color: $body-second-bg;
   }
 }
 
 .effect__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 276px;
+  padding-left: 310px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 345px;
+    padding-left: 369px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/timer-tablet.svg");
+
+    @media (min-width: $desktop-width) {
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/timer-desktop.svg");
+    }
+  }
 }
 
 .effect__title {
@@ -29,11 +48,33 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+  }
+}
+
+.effect__title br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .effect__text {
-
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
-.effect a{
+.effect a {
   color: $pink-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
