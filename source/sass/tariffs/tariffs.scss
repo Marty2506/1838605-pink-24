@@ -1,5 +1,14 @@
 .tariffs {
+  padding-top: 80px;
+  padding-bottom: 45px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 57px;
+  }
 }
 
 .tariffs__wrapper {
@@ -30,9 +39,13 @@
 
 .tariffs__item {
   min-width: 276px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 27px;
   background-color: #283645;
   color: #ffffff;
   line-height: 30px;
+  // border: 1px solid tomato;
 
 
   &:first-of-type {
@@ -44,6 +57,11 @@
 
   @media (min-width: $tablet-width) {
     min-width: 152px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
   }
 }
 
@@ -53,22 +71,34 @@
   }
 }
 
+.tariffs__item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .tariffs__name {
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .tariffs__price {
   font-size: 18px;
   font-weight: 300;
   font-style: normal;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariffs__feature {
-  height: 59px; // min-height не работает почему-то
+  // height: 59px; // min-height не работает почему-то
   font-weight: 400;
+  line-height: 30px;
   text-transform: uppercase;
+  background-color: #ffffff;
 }
 
 .tariffs__feature--name {
@@ -77,36 +107,76 @@
   }
 }
 
-.tariffs__feature--yes {
-  position: relative;
+.tariffs__feature-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  // Временно вместо иконки
-  &::after {
-    content: "Да";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 31px;
-    height: 21px;
+.tariffs__feature--name .tariffs__feature-wrapper {
+  justify-content: flex-start;
+}
+
+.tariffs__row:not(:first-of-type) .tariffs__feature-wrapper {
+  @media (max-width: $mobile-width-only) {
+    justify-content: space-between;
   }
 }
 
-.tariffs__feature--no {
-  position: relative;
-
-  // Временно вместо иконки
-  &::after {
-    content: "Нет";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 27px;
-    height: 27px;
+// Неуниверсальный метод, т.к. приходится прописывать название из таблички вручную, переделать потом
+.tariffs__row--pink .tariffs__feature-wrapper {
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "Розовый фильтр";
+      display: block;
+      font: inherit;
+    }
   }
+}
+
+.tariffs__row--smile .tariffs__feature-wrapper {
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "Смайлики";
+      display: block;
+      font: inherit;
+    }
+  }
+}
+
+.tariffs__row--comments .tariffs__feature-wrapper {
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "Комментарии";
+      display: block;
+      font: inherit;
+    }
+  }
+}
+
+.tariffs__feature--yes .tariffs__mark {
+  display: inline-block;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/feature-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tariffs__feature--no .tariffs__mark {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/feature-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tariffs__toggles {
-  margin-bottom: 45px;
+  // margin-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     display: none;
