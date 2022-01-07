@@ -100,6 +100,14 @@
   text-decoration: none;
 }
 
-.contacts__map {
+.contacts__map iframe {
+  height: 200px;
 
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
 }
