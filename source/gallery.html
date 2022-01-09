@@ -63,10 +63,16 @@
               <ol class="gallery__list">
                 <li class="gallery__item gallery__item--panorama">
                   <div class="user-post user-post--panorama user-post--panorama-of-the-day">
-                    <img class="user-post__photo" src="./img/gallery/panorama-mobile.jpg" alt="" width="320" height="137">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/panorama-desktop.jpg 1x, ./img/gallery/panorama-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/panorama-tablet.jpg 1x, ./img/gallery/panorama-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/panorama-mobile.jpg" srcset="./img/gallery/panorama-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Анна</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Анна</span>
                       <span class="user-post__time">(<time datetime="">5 минут назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">215</span></p>
                     </div>
@@ -74,10 +80,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-1-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-1-desktop.jpg 1x, ./img/gallery/photo-1-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-1-tablet.jpg 1x, ./img/gallery/photo-1-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-1-mobile.jpg" srcset="./img/gallery/photo-1-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Левон</span>
-                      <span class="user-post__time">(<time datetime="">5 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Левон</span>
+                        <span class="user-post__time">(<time datetime="">5 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">356</span></p>
                     </div>
@@ -85,10 +97,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-2-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-2-desktop.jpg 1x, ./img/gallery/photo-2-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-2-tablet.jpg 1x, ./img/gallery/photo-2-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-2-mobile.jpg" srcset="./img/gallery/photo-2-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Антон</span>
-                      <span class="user-post__time">(<time datetime="">12 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Антон</span>
+                        <span class="user-post__time">(<time datetime="">12 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Соседи будут рады!</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">666</span></p>
                     </div>
@@ -96,10 +114,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-3-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-3-desktop.jpg 1x, ./img/gallery/photo-3-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-3-tablet.jpg 1x, ./img/gallery/photo-3-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-3-mobile.jpg" srcset="./img/gallery/photo-3-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Борис</span>
-                      <span class="user-post__time">(<time datetime="">20 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Борис</span>
+                        <span class="user-post__time">(<time datetime="">20 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">215</span></p>
                     </div>
@@ -107,10 +131,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-4-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-4-desktop.jpg 1x, ./img/gallery/photo-4-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-4-tablet.jpg 1x, ./img/gallery/photo-4-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-4-mobile.jpg" srcset="./img/gallery/photo-4-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Сергей</span>
-                      <span class="user-post__time">(<time datetime="">25 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Сергей</span>
+                        <span class="user-post__time">(<time datetime="">25 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Самая кубанская в мире!</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">4</span></p>
                     </div>
@@ -118,10 +148,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-5-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-5-desktop.jpg 1x, ./img/gallery/photo-5-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-5-tablet.jpg 1x, ./img/gallery/photo-5-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-5-mobile.jpg" srcset="./img/gallery/photo-5-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Максим</span>
-                      <span class="user-post__time">(<time datetime="">40 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Максим</span>
+                        <span class="user-post__time">(<time datetime="">40 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Где снег-то?</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">150</span></p>
                     </div>
@@ -129,10 +165,16 @@
                 </li>
                 <li class="gallery__item">
                   <div class="user-post">
-                    <img class="user-post__photo" src="./img/gallery/photo-6-mobile.jpg" alt="" width="280" height="180">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./img/gallery/photo-6-desktop.jpg 1x, ./img/gallery/photo-6-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="./img/gallery/photo-6-tablet.jpg 1x, ./img/gallery/photo-6-tablet@2x.jpg 2x">
+                      <img class="user-post__photo" src="./img/gallery/photo-6-mobile.jpg" srcset="./img/gallery/photo-6-mobile@2x.jpg 2x" alt="">
+                    </picture>
                     <div class="user-post__wrapper">
-                      <span class="user-post__name">Надежда</span>
-                      <span class="user-post__time">(<time datetime="">45 часов назад</time>)</span>
+                      <div class="user-post__name-time">
+                        <span class="user-post__name">Надежда</span>
+                        <span class="user-post__time">(<time datetime="">45 часов назад</time>)</span>
+                      </div>
                       <p class="user-post__text">Всем GM и взаимные лайки!</p>
                       <p class="user-post__likes">Нравится: <span class="user-post__likes-counter">2560</span></p>
                     </div>

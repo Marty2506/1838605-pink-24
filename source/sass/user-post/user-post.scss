@@ -5,6 +5,7 @@
 }
 
 .user-post__photo {
+  display: block;
   justify-self: center;
 }
 
@@ -26,6 +27,7 @@
 
 .user-post__time {
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .user-post__text {
@@ -33,12 +35,18 @@
 }
 
 .user-post__likes {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-top: auto;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   color: $pink-color;
+
+  &::before {
+    content: "LIKE";
+  }
 }
 
 .user-post__likes-counter {
@@ -46,5 +54,5 @@
 }
 
 .user-post--panorama .user-post__photo{
-  @include reset-side-paddings();
+  // @include reset-side-paddings();
 }
