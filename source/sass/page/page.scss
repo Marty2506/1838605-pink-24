@@ -13,15 +13,36 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-color-typical;
+
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
+
+  @media (min-width: 500px) {
+    background-image: url("../img/back-tablet.jpg");
+    background-size: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: auto;
+  }
 }
 
 .page__h1-wrapper {
   min-height: 237px;
-  max-height: 461px;
   padding-top: 102px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+    padding-top: 191px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+    padding-top: 184px;
+  }
 }
 
 .page__h1 {

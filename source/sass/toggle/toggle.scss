@@ -1,4 +1,27 @@
 .toggle {
+  position: relative;
   width: 50px;
   height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/menu-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.toggle--closed {
+  &::after {
+    background-image: url("../img/menu-burger-closed.svg");
+    background-position-x: right;
+  }
 }

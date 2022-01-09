@@ -2,9 +2,18 @@
 
 }
 
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .about__slogan-wrapper {
   padding-top: 46px;
-  margin-bottom: 70px;
+  margin-bottom: 94px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 166px;
+  }
 }
 
 .about__slogan {
@@ -22,29 +31,41 @@
 }
 
 .about__list-wrapper {
+  padding-top: 53px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
 }
 
 .about__list {
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 43px;
   padding: 0;
-  padding-top: 48px;
+  margin: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    min-height: 547px;
+    gap: 41px;
+    min-height: 407px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    gap: 0;
   }
 
-  @media (max-width: $desktop-width) {
-    gap: 40px;
+  @media (min-width: $desktop-width) {
+    margin-top: -94px;
   }
 }
 
@@ -68,18 +89,20 @@
   }
 
   &::after {
-    content: "TEST";
+    content: "";
     width: 157px;
     height: 320px;
-    background-color: tomato;
+    background-repeat: no-repeat;
+    background-position: top;
 
     @media (max-width: $mobile-width-only) {
+      height: 277px;
       margin-top: 48px;
     }
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       position: absolute;
-      top: 0;
+      top: -75px;
       left: 0;
       width: 268px;
       height: 100%;
@@ -87,8 +110,38 @@
 
     @media (min-width: $desktop-width) {
       order: -1;
+      width: 100%;
+      height: 301px;
       margin-bottom: 30px;
     }
+  }
+}
+
+.about__item:nth-child(1)::after {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/about-iphone1-desktop.png");
+  }
+}
+
+.about__item:nth-child(2)::after {
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/about-iphone2-desktop.png");
+  }
+}
+
+.about__item:nth-child(3)::after {
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/about-iphone3-mobile.png");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-image: url("../img/about-iphone3-tablet.png");
+    height: 482px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/about-iphone3-desktop.png");
   }
 }
 
@@ -102,10 +155,17 @@
 
 .about__item-title {
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 19px;
   font-weight: 700;
   font-size: 18px;
-  // text-align: center;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 225px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 
@@ -116,6 +176,11 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 252px;;
+    text-align: center;
   }
 }
 

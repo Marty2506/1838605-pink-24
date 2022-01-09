@@ -11,7 +11,9 @@
 }
 
 .logo__glasses + .logo__text {
-  margin-left: 12px;
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
 }
 
 .logo__text--header {

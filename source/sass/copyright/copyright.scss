@@ -14,12 +14,24 @@
 }
 
 .copyright__link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 27px;
   height: 34px;
-  border: 1px solid black;
+  border: none;
+
+  &:hover .copyright__icon {
+    fill: black;
+  }
+
+  &:active .copyright__icon {
+    fill: black;
+    opacity: 0.3;
+  }
+
 }
 
 .copyright__icon {
-
+  fill: $pink-color;
 }
