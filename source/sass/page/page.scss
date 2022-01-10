@@ -66,6 +66,7 @@
 .page__text {
   line-height: 30px;
   text-align: center;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;

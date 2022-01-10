@@ -199,13 +199,16 @@
           </div>
 
         </section>
-        <p class="page__advice page__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="page__advice page__text">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
 
         <section class="upload">
           <h2 class="visually-hidden">Загрузить свое изображение</h2>
           <div class="container">
             <div class="upload__wrapper">
-              <img class="upload__image" src="./img/gallery/upload-mobile.jpg" alt="" width="280" height="374">
+              <picture>
+                <source media="(min-width: 660px)" srcset="./img/gallery/upload-tablet.jpg 1x, ./img/gallery/upload-tablet@2x.jpg 2x">
+                <img class="upload__image" src="./img/gallery/upload-mobile.jpg" srcset="./img/gallery/upload-mobile@2x.jpg 2x" alt="">
+              </picture>
               <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="upload__range-wrapper">
                   <label class="visually-hidden" for="image-crop">Обрезка изображения</label>
@@ -213,11 +216,11 @@
                 </div>
                 <div class="upload__range-wrapper">
                   <label class="visually-hidden" for="image-fill">Заливка изображения</label>
-                  <input class="upload__range upload__range--fill" type="range" id="image-fill" name="image-fill" min="0" max="255">
+                  <input class="upload__range upload__range--fill upload__range--not-active" type="range" id="image-fill" name="image-fill" min="0" max="255">
                 </div>
                 <div class="upload__range-wrapper">
                   <label class="visually-hidden" for="image-contrast">Контраст изображения</label>
-                  <input class="upload__range upload__range--contrast" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
+                  <input class="upload__range upload__range--contrast upload__range--not-active" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
                 </div>
                 <!-- Кнопки или ссылки? Должны быть в форме? -->
                 <div class="upload__button-wrapper">
