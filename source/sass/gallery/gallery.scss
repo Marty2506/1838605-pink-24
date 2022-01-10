@@ -25,7 +25,9 @@
 }
 
 .gallery__item {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .gallery__item--panorama {
