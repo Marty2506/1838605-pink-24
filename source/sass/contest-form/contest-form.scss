@@ -58,14 +58,24 @@
   font-size: 18px;
   @include make-form-border;
   flex-grow: 1;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: $pink-color;
+  }
 }
 
 .contest-form__name-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 24px;
     height: 100%;
+    padding-top: 30px;
   }
 }
 

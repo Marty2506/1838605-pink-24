@@ -36,14 +36,41 @@
 }
 
 .group__control-mark {
+  position: relative;
   width: 35px;
   height: 35px;
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: $pink-color;
+  }
 }
 
-.group__control-input[type="radio"] + .group__control-mark{
+.group__control-input[type="radio"] + .group__control-mark {
+  border-radius: 50%;
+}
+
+.group__control-input[type="checkbox"]:checked + .group__control-mark {
+  background-image: url("../img/tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.group__control-input[type="radio"]:checked + .group__control-mark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 50%);
+  width: 15px;
+  height: 15px;
+  background-color: $pink-color;
   border-radius: 50%;
 }
 
