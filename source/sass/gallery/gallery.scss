@@ -2,8 +2,8 @@
 
 }
 
-.gallery__wrapper {
-
+.gallery__panorama {
+  margin-bottom: 20px;
 }
 
 .gallery__list {
@@ -30,6 +30,3 @@
   }
 }
 
-.gallery__item--panorama {
-  grid-column: 1 / -1;
-}

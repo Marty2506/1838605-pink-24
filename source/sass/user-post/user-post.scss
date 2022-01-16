@@ -7,6 +7,9 @@
 .user-post__photo {
   display: block;
   justify-self: center;
+  // object-fit: contain;
+  // margin: 0 auto;
+  width: 100%; // Картинкуа стремно растягивается. Забить и оставить так или ограничить максимальной шириной картинки?
 }
 
 .user-post__wrapper {
@@ -71,16 +74,8 @@
 
 }
 
-.user-post--panorama .user-post__photo {
-  // Как по-другому панораму вытащить за падинги, не убирая центровщик?
-  // Норм что при резине картинка не становится еще шире? Там просто размер картинки ограничен, ее качество портиться будет
-  @include reset-side-paddings();
-  max-width: calc(100% + 2*$page-side-paddings);
-
-  @media (min-width: $desktop-width) {
-    @include reset-side-paddings($page-side-paddings-dekstop);
-    max-width: calc(100% + 2*$page-side-paddings-dekstop);
-  }
+.user-post--panorama {
+  display: block;
 }
 
 .user-post--panorama .user-post__wrapper {
