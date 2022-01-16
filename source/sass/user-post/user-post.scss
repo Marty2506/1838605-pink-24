@@ -56,22 +56,14 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
+}
 
-  &::before {
-    content: "";
-    width: 13px;
-    height: 12px;
-    top: 0;
-    left: 0;
-    margin-right: 18px;
-    background-image: url("../img/like-icon.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+.user-post__like-icon {
+  margin-right: 18px;
 
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-      order: 2;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    order: 2;
   }
 }
 
@@ -109,9 +101,11 @@
     justify-content: flex-end;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+  }
+}
 
-    &::before {
-      margin-left: 17px;
-    }
+.user-post--panorama .user-post__like-icon {
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
   }
 }
