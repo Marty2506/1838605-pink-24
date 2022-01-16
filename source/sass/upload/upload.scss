@@ -4,6 +4,10 @@
   }
 }
 
+.upload__form {
+  position: relative;
+}
+
 .upload__wrapper {
   display: flex;
   flex-direction: column;
@@ -28,7 +32,7 @@
 }
 
 .upload__image {
-
+  display: block;
 }
 
 .upload__form {
@@ -36,12 +40,92 @@
   flex-direction: column;
 }
 
-.upload__range-wrapper {
-  height: 70px;
+.upload__filter {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  border-bottom: 1px solid transparentize(#283645, 0.9); // Как на мобилке полосу до краев протянуть?
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+  }
 }
+
+.upload__filter-icon {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 0;
+    fill: #283645;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.upload__filter--crop .upload__filter-icon {
+  @media (max-width: $mobile-width-only) {
+    left: 0;
+  }
+}
+
+.upload__filter--fill .upload__filter-icon {
+  @media (max-width: $mobile-width-only) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.upload__filter--contrast .upload__filter-icon {
+  @media (max-width: $mobile-width-only) {
+    right: 0;
+  }
+}
+
+.upload__filter--active {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 83px;
+    padding-bottom: 39px;
+  }
+}
+
+.upload__filter--active .upload__filter-icon {
+  fill: $pink-color;
+  opacity: 1;
+}
+
 
 .upload__range {
   width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  // Походу так не получится из-за разных браузеров
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    top: 0;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $pink-color;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    background-color: #283645;
+  }
 }
 
 .upload__range--crop {
@@ -52,6 +136,10 @@
 
 }
 
+.upload__filter--active .upload__range {
+  display: block;
+}
+
 .upload__range--contrast {
 
 }
@@ -60,10 +148,11 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: auto;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     gap: 24px;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {

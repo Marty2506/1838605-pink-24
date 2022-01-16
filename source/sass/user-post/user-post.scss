@@ -5,11 +5,13 @@
 }
 
 .user-post__photo {
+  display: block;
   justify-self: center;
 }
 
 .user-post__wrapper {
   display: grid;
+  grid-template-rows: min-content auto min-content; // Как растянуть второй элемент на все свободное место по другому???
   gap: 10px;
   width: 100%;
   height: 100%;
@@ -18,6 +20,12 @@
   padding-left: 17px;
   padding-right: 17px;
   background-color: $user-post-bg;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .user-post__name {
@@ -26,6 +34,7 @@
 
 .user-post__time {
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .user-post__text {
@@ -33,18 +42,76 @@
 }
 
 .user-post__likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
   margin: 0;
   margin-top: auto;
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
   color: $pink-color;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 12px;
+    top: 0;
+    left: 0;
+    margin-right: 18px;
+    background-image: url("../img/like-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      order: 2;
+    }
+  }
 }
 
 .user-post__likes-counter {
 
 }
 
-.user-post--panorama .user-post__photo{
+.user-post--panorama .user-post__photo {
+  // Как по-другому панораму вытащить за падинги, не убирая центровщик?
+  // Норм что при резине картинка не становится еще шире? Там просто размер картинки ограничен, ее качество портиться будет
   @include reset-side-paddings();
+  max-width: calc(100% + 2*$page-side-paddings);
+
+  @media (min-width: $desktop-width) {
+    @include reset-side-paddings($page-side-paddings-dekstop);
+    max-width: calc(100% + 2*$page-side-paddings-dekstop);
+  }
+}
+
+.user-post--panorama .user-post__wrapper {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    min-height: auto;
+  }
+}
+
+.user-post--panorama .user-post__text {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+
+.user-post--panorama .user-post__likes {
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+
+    &::before {
+      margin-left: 17px;
+    }
+  }
 }
