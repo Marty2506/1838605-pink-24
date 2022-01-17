@@ -7,6 +7,9 @@
 .user-post__photo {
   display: block;
   justify-self: center;
+  // object-fit: contain;
+  // margin: 0 auto;
+  width: 100%; // Картинкуа стремно растягивается. Забить и оставить так или ограничить максимальной шириной картинки?
 }
 
 .user-post__wrapper {
@@ -56,22 +59,14 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
+}
 
-  &::before {
-    content: "";
-    width: 13px;
-    height: 12px;
-    top: 0;
-    left: 0;
-    margin-right: 18px;
-    background-image: url("../img/like-icon.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+.user-post__like-icon {
+  margin-right: 18px;
 
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-      order: 2;
-    }
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    order: 2;
   }
 }
 
@@ -79,16 +74,8 @@
 
 }
 
-.user-post--panorama .user-post__photo {
-  // Как по-другому панораму вытащить за падинги, не убирая центровщик?
-  // Норм что при резине картинка не становится еще шире? Там просто размер картинки ограничен, ее качество портиться будет
-  @include reset-side-paddings();
-  max-width: calc(100% + 2*$page-side-paddings);
-
-  @media (min-width: $desktop-width) {
-    @include reset-side-paddings($page-side-paddings-dekstop);
-    max-width: calc(100% + 2*$page-side-paddings-dekstop);
-  }
+.user-post--panorama {
+  display: block;
 }
 
 .user-post--panorama .user-post__wrapper {
@@ -109,9 +96,11 @@
     justify-content: flex-end;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+  }
+}
 
-    &::before {
-      margin-left: 17px;
-    }
+.user-post--panorama .user-post__like-icon {
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
   }
 }

@@ -1,19 +1,36 @@
 .download {
   color: #ffffff;
-  // background-color: fade-out(orange, 0.5);
 
-  background-image: url("../img/download-back-mobile.png");
+  @media (max-resolution: 1dppx) {
+    background-image: url("../img/download-back-mobile.png");
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/download-back-mobile@2x.png");
+    background-size: 320px auto;
+  }
   background-repeat: no-repeat;
   background-position: 0 175px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    background-image: url("../img/download-back-tablet.png");
+    @media (max-resolution: 1dppx) {
+      background-image: url("../img/download-back-tablet.png");
+    }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/download-back-tablet@2x.png");
+      background-size: 660px auto;
+    }
     background-position: 0 100%;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/download-back-desktop.png");
+    @media (max-resolution: 1dppx) {
+      background-image: url("../img/download-back-desktop.png");
+    }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/download-back-desktop@2x.png");
+      background-size: 1050px auto;
+    }
     background-position: 100% 100%;
   }
 }
