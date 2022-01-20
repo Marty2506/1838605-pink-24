@@ -2,29 +2,95 @@
   text-decoration: none;
 }
 
-.logo__glasses {
-
+.logo--header .logo__pink {
+  fill: #ffffff;
 }
 
-.logo__text {
-
+.logo--header .logo__glasses {
+  fill: #ffffff;
 }
 
-.logo__glasses + .logo__text {
+.logo--footer .logo__glasses {
+  fill: $pink-color;
+}
+
+.logo__pink-star {
+  fill: $pink-color;
+}
+
+.logo--header .logo__glasses-stars {
+  fill: $pink-color;
+}
+
+.logo:hover .logo__pink,
+.logo:hover .logo__glasses,
+.logo:hover .logo__pink-star,
+.logo:hover .logo__glasses-stars {
+  fill: $pink-color;
+}
+
+.logo--header:hover .logo__pink-star,
+.logo--header:hover .logo__glasses-stars  {
+  fill: gold; // сам решил добавить))
+}
+
+.logo--header:active .logo__pink,
+.logo--header:active .logo__glasses,
+.logo--header:active .logo__pink-star,
+.logo--header:active .logo__glasses-stars {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__pink,
+.logo--footer:active .logo__glasses-stars {
+  fill: #000000;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__glasses,
+.logo--footer:active .logo__pink-star {
+  fill: $pink-color;
+  opacity: 0.3;
+}
+
+
+.logo--mobile {
+  display: block;
+
   @media (min-width: $tablet-width) {
-    margin-left: 12px;
+    display: none;
   }
 }
 
-.logo__text--header {
-  fill: #ffffff;
+.logo--footer .logo--mobile {
+  display: none;
 }
 
-.logo__glasses--header {
+.logo--tablet {
   display: none;
-  fill: #ffffff;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo--footer .logo--tablet {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
