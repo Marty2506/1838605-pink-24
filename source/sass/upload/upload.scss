@@ -43,18 +43,28 @@
 .upload__filter {
   display: flex;
   flex-direction: column;
-  gap: 39px;
   border-bottom: 1px solid transparentize(#283645, 0.9); // Как на мобилке полосу до краев протянуть?
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     flex-direction: row;
     align-items: center;
+    gap: 29px;
     height: 70px;
   }
 }
 
+// Почему не работает?
+.upload__filter:last-of-type {
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
+}
+
 .upload__filter-icon {
+  fill: $pink-color;
+
   @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 0;
@@ -65,11 +75,25 @@
       opacity: 0.5;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
 }
 
 .upload__filter--crop .upload__filter-icon {
   @media (max-width: $mobile-width-only) {
-    left: 0;
+    left: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -78,11 +102,31 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
+  }
 }
 
 .upload__filter--contrast .upload__filter-icon {
   @media (max-width: $mobile-width-only) {
-    right: 0;
+    right: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
   }
 }
 
@@ -100,12 +144,21 @@
 
 
 .upload__range {
-  width: 100%;
+  // width: 100%;
+  flex-grow: 1; // был width: 100%, но он уменьшал размер рядом стоящей иконки. Так норм?
   -webkit-appearance: none;
   background-color: transparent;
 
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 92px;
   }
 
   // Походу так не получится из-за разных браузеров
