@@ -28,6 +28,47 @@
   }
 }
 
+
+.contest-form__label--phone {
+  position: relative;
+
+  // Дурацкая ситуация. Инпуту нельзя добавить ::after, а если ему добавлять обертку html валидатор выдает ошибку.
+  // Сделал так, но некрасиво из-за того, что при увеличении размеров инпута все сломается
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      width: 57px;
+      height: 57px;
+      background-color: $grey-border;
+      background-image: url("../img/phone-icon.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.contest-form__label--mail {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: 2px;
+      width: 57px;
+      height: 57px;
+      background-color: $grey-border;
+      background-image: url("../img/mail-icon.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .contest-form__group--contacts .contest-form__label  {
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -53,7 +94,7 @@
 }
 
 .contest-form__field {
-  padding: 20px 20px;
+  padding: 17px 20px;
   box-sizing: border-box;
   font-size: 18px;
   @include make-form-border;
