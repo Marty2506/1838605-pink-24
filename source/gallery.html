@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/favicon_180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page__body">
 
@@ -112,7 +112,7 @@
                   <p class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                   <p class="user-post__likes">
                     <svg class="user-post__like-icon" width="12" height="12">
-                      <use xlink:href="img/sprite.svg#like"></use>
+                      <use xlink:href="img/sprite.svg#like-icon"></use>
                     </svg>
                     <span class="user-post__likes-counter">Нравится: 215</span>
                   </p>
@@ -138,7 +138,7 @@
                       <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 356</span>
                       </p>
@@ -160,7 +160,7 @@
                       <p class="user-post__text">Соседи будут рады!</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 666</span>
                       </p>
@@ -182,7 +182,7 @@
                       <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 215</span>
                       </p>
@@ -204,7 +204,7 @@
                       <p class="user-post__text">Самая кубанская в мире!</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 4</span>
                       </p>
@@ -226,7 +226,7 @@
                       <p class="user-post__text">Где снег-то?</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 150</span>
                       </p>
@@ -248,7 +248,7 @@
                       <p class="user-post__text">Всем GM и взаимные лайки!</p>
                       <p class="user-post__likes">
                         <svg class="user-post__like-icon" width="12" height="12">
-                          <use xlink:href="img/sprite.svg#like"></use>
+                          <use xlink:href="img/sprite.svg#like-icon"></use>
                         </svg>
                         <span class="user-post__likes-counter">Нравится: 2560</span>
                       </p>
@@ -274,20 +274,20 @@
                 <div class="upload__filter upload__filter--crop upload__filter--active">
                   <label class="visually-hidden" for="image-crop">Обрезка изображения</label>
                   <svg class="upload__filter-icon" width="44" height="44">
-                    <use xlink:href="img/sprite.svg#icon-crop"></use>
+                    <use xlink:href="img/sprite.svg#crop-icon"></use>
                   </svg>
                   <input class="upload__range" type="range" id="image-crop" name="image-crop" min="0" max="255">
                 </div>
                 <div class="upload__filter upload__filter--fill">
                   <label class="visually-hidden" for="image-fill">Заливка изображения</label>
                   <svg class="upload__filter-icon" width="48" height="43">
-                    <use xlink:href="img/sprite.svg#icon-fill"></use>
+                    <use xlink:href="img/sprite.svg#fill-icon"></use>
                   </svg>
                   <input class="upload__range" type="range" id="image-fill" name="image-fill" min="0" max="255">
                 </div>
                 <div class="upload__filter upload__filter--contrast">
                   <svg class="upload__filter-icon" width="48" height="43">
-                    <use xlink:href="img/sprite.svg#icon-contrast"></use>
+                    <use xlink:href="img/sprite.svg#contrast-icon"></use>
                   </svg>
                   <label class="visually-hidden" for="image-contrast">Контраст изображения</label>
                   <input class="upload__range" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
@@ -393,25 +393,6 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-      navMain.classList.add('main-nav--closed');
-      navToggle.classList.add('toggle--closed');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          navToggle.classList.remove('toggle--closed');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          navToggle.classList.add('toggle--closed');
-        }
-      });
-    </script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
