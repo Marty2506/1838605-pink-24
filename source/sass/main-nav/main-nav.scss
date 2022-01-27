@@ -68,8 +68,8 @@
 
 .main-nav__item--head {
   justify-content: space-between;
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 21px;
+  padding-bottom: 25px;
 
   @media (min-width: $desktop-width) {
     justify-content: left;
@@ -87,7 +87,9 @@
 .main-nav__link {
   display: block;
   width: 100%;
-  padding: 15px 0;
+  padding: 0;
+  padding-top: 15.5px;
+  padding-bottom: 15.5px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;

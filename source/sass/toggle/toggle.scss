@@ -14,7 +14,7 @@
     left: 0;
     right: 0;
     background-image: url("../img/menu-burger.svg");
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
   }
 }
@@ -22,6 +22,6 @@
 .toggle--closed {
   &::after {
     background-image: url("../img/menu-burger-closed.svg");
-    background-position-x: right;
+    background-position: center;
   }
 }
