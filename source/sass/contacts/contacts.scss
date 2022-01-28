@@ -18,6 +18,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     font-size: 40px;
     line-height: 54px;
   }
@@ -58,10 +59,18 @@
 
 .contacts__phone {
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .contacts__mail {
   order: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 
   @media (min-width: $desktop-width) {
     order: 3;
@@ -70,6 +79,11 @@
 
 .contacts__address {
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+    margin-bottom: 5px;
+  }
 
   @media (min-width: $desktop-width) {
     order: 2;

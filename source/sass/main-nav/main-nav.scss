@@ -71,6 +71,11 @@
   padding-top: 21px;
   padding-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
   @media (min-width: $desktop-width) {
     justify-content: left;
     margin-right: 173px;
@@ -109,6 +114,11 @@
 }
 
 .main-nav__toggle {
+
+  @media (min-width: $tablet-width) {
+    transform: translateY(8px);
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }

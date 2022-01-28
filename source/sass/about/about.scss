@@ -11,6 +11,11 @@
   padding-top: 40px;
   margin-bottom: 61px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    margin-bottom: 82px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 166px;
   }
@@ -28,13 +33,19 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 
 .about__list-wrapper {
   padding-top: 51px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 28px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,8 +65,8 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    gap: 41px;
-    min-height: 407px;
+    gap: 33px;
+    min-height: 411px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +89,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     align-items: flex-start;
-    margin-left: 300px;
+    margin-left: 310px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +113,7 @@
 
     @media (min-width: $tablet-width) and (max-width: $desktop-width) {
       position: absolute;
-      top: -75px;
+      top: -70px;
       left: 0;
       width: 268px;
       height: 100%;
@@ -137,7 +148,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: url("../img/about-iphone3-tablet.png");
-    height: 482px;
+    height: 481px;
   }
 
   @media (min-width: $desktop-width) {
