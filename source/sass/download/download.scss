@@ -111,7 +111,7 @@
     padding-right: $page-side-paddings;
     padding-left: $page-side-paddings;
     padding-top: 28px;
-    padding-bottom: 38px;
+    padding-bottom: 31px;
     background-color: #1d2631;
   }
 }
@@ -121,7 +121,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   padding: 0;
   list-style-type: none;
 }
@@ -144,18 +144,21 @@
 .download__market-button--apple {
   width: 47px;
   height: 56px;
+  transform: translateY(1px);
   background-image: url("../img/apple-logo.svg");
 }
 
 .download__market-button--android {
   width: 43px;
   height: 47px;
+  transform: translateY(3px);
   background-image: url("../img/android-logo.svg");
 }
 
 .download__market-button--ms {
   width: 44px;
   height: 41px;
+  transform: translate(1px, 5px);
   background-image: url("../img/microsoft-logo.svg");
 }
 

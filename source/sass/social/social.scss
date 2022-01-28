@@ -11,9 +11,8 @@
 }
 
 .social__item {
-
   &:not(:last-of-type) {
-    margin-right: 14px;
+    margin-right: 8px;
   }
 }
 
@@ -23,7 +22,7 @@
   align-items: center;
   width: 48px;
   height: 48px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   border: 3px solid transparentize($font-color-typical, 0.9);
   border-radius: 50%;
 

@@ -1,6 +1,6 @@
 .tariffs {
-  padding-top: 80px;
-  padding-bottom: 45px;
+  padding-top: 79px;
+  padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -29,7 +29,7 @@
 }
 
 .tariffs__table {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   width: 100%;
 }
 
@@ -40,8 +40,8 @@
 .tariffs__item {
   min-width: 276px;
   padding: 0;
-  padding-top: 10px;
-  padding-bottom: 27px;
+  padding-top: 12px;
+  padding-bottom: 26px;
   background-color: #283645;
   color: #ffffff;
   line-height: 30px;
@@ -110,10 +110,10 @@
 .tariffs__feature-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 11px;
   padding-bottom: 15px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
 .tariffs__feature--name .tariffs__feature-wrapper {
@@ -161,6 +161,7 @@
   display: inline-block;
   width: 31px;
   height: 21px;
+  transform: translate(9px, 5px);
   background-image: url("../img/feature-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -170,6 +171,7 @@
   display: inline-block;
   width: 27px;
   height: 27px;
+  transform: translate(7px, 4px);
   background-image: url("../img/feature-no.svg");
   background-repeat: no-repeat;
   background-position: center;

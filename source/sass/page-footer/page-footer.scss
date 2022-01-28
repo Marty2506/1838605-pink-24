@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 41px;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -21,7 +21,8 @@
 }
 
 .page-footer__social {
-
+  margin-top: -3px;
+  margin-bottom: -3px;
 }
 
 .page-footer__copyright {
