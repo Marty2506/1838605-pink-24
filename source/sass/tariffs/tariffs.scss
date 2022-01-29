@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 57px;
+    padding-bottom: 56px;
   }
 }
 
@@ -36,6 +37,10 @@
 .tariffs__table {
   margin-bottom: 44px;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .tariffs__row {
@@ -61,31 +66,39 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 152px;
+    min-width: 153px;
     padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 233px;
     padding-bottom: 19px;
   }
 }
 
 .tariffs__item--hit {
   position: relative;
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateX(-2px);
-      width: 74px;
-      height: 74px;
-      background-image: url("../img/hit-mobile.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-2px);
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/hit-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    &::after {
+      transform: translate(0px, 0px);
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/hit-tablet.svg");
+    }
   }
 }
 
@@ -144,14 +157,14 @@
   @media (min-width: $tablet-width) {
     padding-top: 5px;
     padding-bottom: 8px;
-    padding-left: 13px;
-    padding-right: 25px;
+    padding-left: 14px;
+    padding-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 5px;
-    padding-bottom: 8px;
-    padding-left: 13px;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    padding-left: 20px;
     padding-right: 25px;
   }
 }
@@ -197,32 +210,34 @@
   }
 }
 
-.tariffs__feature--yes .tariffs__mark {
-  display: inline-block;
-  width: 31px;
-  height: 21px;
+.tariffs__mark {
   transform: translate(9px, 5px);
-  background-image: url("../img/feature-yes.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 
   @media (min-width: $tablet-width) {
     transform: translate(6px, -1px);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(3px, -1px);
+  }
+}
+
+.tariffs__feature--yes .tariffs__mark {
+  display: inline-block;
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/feature-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tariffs__feature--no .tariffs__mark {
   display: inline-block;
   width: 27px;
   height: 27px;
-  transform: translate(7px, 4px);
   background-image: url("../img/feature-no.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  @media (min-width: $tablet-width) {
-    transform: translate(6px, -1px);
-  }
 }
 
 .tariffs__toggles {

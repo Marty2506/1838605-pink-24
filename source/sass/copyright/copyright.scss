@@ -13,6 +13,10 @@
   margin: 0;
   margin-right: 15px;
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .copyright__link {
