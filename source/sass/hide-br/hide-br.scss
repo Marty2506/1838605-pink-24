@@ -1,0 +1,36 @@
+.hide-br {
+
+}
+
+.hide-br--mobile {
+  @media (max-width: $mobile-width-only) {
+    display: inline;
+    content: " ";
+
+    &::after {
+      content: " ";
+    }
+  }
+}
+
+.hide-br--tablet {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    display: inline;
+    content: " ";
+
+    &::after {
+      content: " ";
+    }
+  }
+}
+
+.hide-br--desktop {
+  @media (min-width: $desktop-width) {
+    display: inline;
+    content: " ";
+
+    &::after {
+      content: " ";
+    }
+  }
+}

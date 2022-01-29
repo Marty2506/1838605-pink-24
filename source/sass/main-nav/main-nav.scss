@@ -1,12 +1,12 @@
 .main-nav {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width-only) {
     @include reset-side-paddings();
     background-color: #283645;
   }
 }
 
 .main-nav--closed {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width-only) {
     background-color: transparent;
   }
 }
@@ -55,7 +55,7 @@
 }
 
 .main-nav--closed .main-nav__item {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
@@ -83,7 +83,7 @@
 }
 
 .main-nav--closed .main-nav__item--head {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width-only) {
     display: flex;
     box-shadow: none;
   }

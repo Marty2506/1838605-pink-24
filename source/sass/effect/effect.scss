@@ -1,6 +1,4 @@
 .effect {
-  // display: flex;
-  // align-items: center;
   padding-top: 54px;
   padding-bottom: 67px;
 
@@ -9,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 17px;
+    padding-top: 0;
     background-color: $body-second-bg;
   }
 }
@@ -54,13 +52,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 98px;
+    padding-top: 92px;
   }
 }
 
 .effect__title br {
   @media (min-width: $desktop-width) {
-    display: none;
+    // content: ' ';
+
+    // &::after {
+    //   content: ' ';
+    // }
   }
 }
 
@@ -72,10 +74,20 @@
   font-weight: 400;
 
   @media (min-width: $desktop-width) {
+    width: 550px;
+    margin-top: 22px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
   }
 }
+
+.effect__text br {
+  @media (min-width: $desktop-width) {
+    // display: none;
+  }
+}
+
 .effect a {
   color: $pink-color;
   font-weight: 400;

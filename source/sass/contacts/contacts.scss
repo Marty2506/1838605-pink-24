@@ -89,7 +89,7 @@
     order: 2;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $tablet-width-only) {
     width: 100%;
   }
 }

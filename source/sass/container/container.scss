@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
+    max-width: $tablet-width-only;
     padding-right: $page-side-paddings-dekstop;
     padding-left: $page-side-paddings-dekstop;
   }

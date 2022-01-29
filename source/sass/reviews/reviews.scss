@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 72px;
-    padding-bottom: 100px;
+    padding-bottom: 92px;
   }
 }
 
@@ -19,7 +19,7 @@
   align-items: center;
 
   @media(min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 112px;
     background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position-x: center;
@@ -46,7 +46,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    width: 60%;
+    width: 75%;
   }
 }
 
@@ -67,6 +67,11 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
 }
 
 .reviews__author-short-info {
@@ -75,6 +80,10 @@
 
   @media(max-width: $mobile-width-only) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
@@ -110,7 +119,7 @@
     position: absolute;
     top: 0;
     display: flex;
-    transform: translateY(50%);
+    transform: translateY(71%);
     justify-content: space-between;
     width: 100%;
   }
