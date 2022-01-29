@@ -24,6 +24,10 @@
   color: #ffffff;
   border: 3px solid #ffffff;
   border-radius: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .button--upload {

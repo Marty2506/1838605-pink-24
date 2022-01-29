@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 41px;
-  padding-top: 40px;
+  padding-top: 25px;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -17,13 +17,22 @@
 }
 
 .page-footer__logo {
-
+  @media (min-width: $tablet-width) {
+    height: 57px;
+    padding-top: 3px;
+    width: 150px;
+  }
 }
 
 .page-footer__social {
-
+  @media (max-width: $mobile-width-only) {
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
 }
 
 .page-footer__copyright {
-
+  @media (min-width: $tablet-width) {
+    width: 150px;
+  }
 }

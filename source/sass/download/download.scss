@@ -38,7 +38,7 @@
 .download__wrapper {
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding-bottom: 120px;
+    padding-bottom: 112px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,14 +49,14 @@
 .download__slogan {
   display: block;
   height: 461px;
-  padding-top: 95px;
+  padding-top: 89px;
   box-sizing: border-box;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     height: auto;
-    margin-bottom: 39px;
-    padding-top: 212px;
+    margin-bottom: 30px;
+    padding-top: 204px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,6 +76,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 40px;
     line-height: 48px;
   }
@@ -98,6 +101,10 @@
 
 .download__button {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .download__list-wrapper {
@@ -111,7 +118,7 @@
     padding-right: $page-side-paddings;
     padding-left: $page-side-paddings;
     padding-top: 28px;
-    padding-bottom: 38px;
+    padding-bottom: 31px;
     background-color: #1d2631;
   }
 }
@@ -121,9 +128,13 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .download__item {
@@ -144,18 +155,21 @@
 .download__market-button--apple {
   width: 47px;
   height: 56px;
+  transform: translateY(1px);
   background-image: url("../img/apple-logo.svg");
 }
 
 .download__market-button--android {
   width: 43px;
   height: 47px;
+  transform: translateY(3px);
   background-image: url("../img/android-logo.svg");
 }
 
 .download__market-button--ms {
   width: 44px;
   height: 41px;
+  transform: translate(1px, 5px);
   background-image: url("../img/microsoft-logo.svg");
 }
 
@@ -166,5 +180,9 @@
 .download__info {
   display: inline-block;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
