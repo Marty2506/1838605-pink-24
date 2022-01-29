@@ -4,12 +4,16 @@
 
 .group__list {
   display: grid;
-  row-gap: 47px;
+  row-gap: 43px;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 37px;
+  padding-bottom: 43px;
   list-style-type: none;
+}
+
+.group-list--radio {
+  row-gap: 35px;
 }
 
 .group__list--grid {
@@ -28,7 +32,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 22px;
+  gap: 20px;
 }
 
 .group__control-input {
@@ -39,6 +43,7 @@
   position: relative;
   width: 35px;
   height: 35px;
+  box-sizing: content-box;
   background-color: #ffffff;
   border: 2px solid #E5E5E5;
   border-radius: 1px;
@@ -53,6 +58,7 @@
 }
 
 .group__control-input[type="radio"] + .group__control-mark {
+  margin-right: 10px;
   border-radius: 50%;
 }
 
@@ -67,7 +73,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(50%, 50%);
+  transform: translate(10px, 10px);
   width: 15px;
   height: 15px;
   background-color: $pink-color;
