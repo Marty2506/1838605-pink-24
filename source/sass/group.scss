@@ -22,12 +22,19 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 37px;
+  }
 }
 
 .group__list--grid {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    column-gap: 53px;
   }
 }
 
@@ -71,6 +78,11 @@
 
   @media (min-width: $tablet-width) {
     margin-right: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 16px;
+    margin-right: 0px;
   }
 }
 

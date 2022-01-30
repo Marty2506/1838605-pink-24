@@ -59,8 +59,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 400px;
-    padding-top: 184px;
+    min-height: 394px;
+    padding-top: 169px;
   }
 }
 
@@ -97,5 +97,12 @@
     padding-top: 91px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding-top: 91px;
+    padding-left: 78px;
+    padding-right: 78px;
   }
 }
