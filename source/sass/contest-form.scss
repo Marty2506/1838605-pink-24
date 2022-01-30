@@ -4,6 +4,11 @@
   gap: 41px;
   margin-bottom: 31px;
 
+  @media (min-width: $tablet-width) {
+    gap: 59px;
+    margin-bottom: 56px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,12 +25,16 @@
 
   &:not(:last-of-type) {
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 53px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 17px;
   }
 }
 
@@ -39,10 +48,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 1px;
+      top: 2px;
       right: 2px;
-      width: 57px;
-      height: 57px;
+      width: 58px;
+      height: 58px;
       background-color: $grey-border;
       background-image: url("../img/phone-icon.svg");
       background-position: center;
@@ -58,10 +67,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 1px;
+      top: 2px;
       right: 2px;
-      width: 57px;
-      height: 57px;
+      width: 58px;
+      height: 58px;
       background-color: $grey-border;
       background-image: url("../img/mail-icon.svg");
       background-position: center;
@@ -75,6 +84,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 10px;
+    margin-bottom: 29px;
   }
 }
 
@@ -91,6 +101,12 @@
 .contest-form__group--contacts .contest-form__field  {
   @media (min-width: $tablet-width) {
     order: -1;
+  }
+}
+
+.contest-form__group--contacts .contest-form__label-text {
+  @media (min-width: $tablet-width) {
+    margin-left: 18px;
   }
 }
 
@@ -134,8 +150,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 57px;
+    padding-right: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,6 +174,7 @@
   order: 2;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     order: 4;
   }
 }
@@ -175,6 +192,11 @@
 .contest-form__group--contacts {
   margin-top: -10px;
   order: 3;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding-top: 35px;
+  }
 }
 
 .contest-form__group--app {
@@ -182,6 +204,7 @@
   order: 4;
 
   @media (min-width: $tablet-width) {
+    padding-top: 7px;
     order: 2;
   }
 
@@ -226,8 +249,9 @@
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
+    height: 194px;
     margin-top: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 

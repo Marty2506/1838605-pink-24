@@ -1,0 +1,5 @@
+.hide-mobile {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

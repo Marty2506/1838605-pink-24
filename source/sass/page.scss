@@ -55,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
-    padding-top: 191px;
+    padding-top: 177px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,19 +74,28 @@
   text-align: center;
 }
 
-.page__advice {
-  display: block;
-  margin: 0;
-  padding-top: 44px;
-  margin-bottom: 34px;
-}
-
 .page__text {
+  margin: 0;
   line-height: 30px;
   text-align: center;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+}
+
+.page__advice {
+  display: block;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  padding-top: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    padding-top: 91px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

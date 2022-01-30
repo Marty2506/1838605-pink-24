@@ -10,10 +10,18 @@
   padding-top: 37px;
   padding-bottom: 43px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+  }
 }
 
 .group-list--radio {
   row-gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 55px;
+  }
 }
 
 .group__list--grid {
@@ -60,6 +68,10 @@
 .group__control-input[type="radio"] + .group__control-mark {
   margin-right: 10px;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -2px;
+  }
 }
 
 .group__control-input[type="checkbox"]:checked + .group__control-mark {
