@@ -1,9 +1,18 @@
 .gallery {
   margin-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
 }
 
 .gallery__panorama {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .gallery__list {

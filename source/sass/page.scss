@@ -106,3 +106,10 @@
     padding-right: 78px;
   }
 }
+
+.page__advice--gallery2 {
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+    margin-bottom: 63px;
+  }
+}
