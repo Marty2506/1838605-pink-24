@@ -33,6 +33,16 @@
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
+
+  &:hover {
+    background-color: #ffffff;
+    color: $pink-color;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: transparentize($pink-color, 0.7);
+  }
 }
 
 .button--upload {
@@ -49,6 +59,42 @@
   @media (min-width: $desktop-width) {
     width: 183px;
   }
+
+  &:hover {
+    background-color: $pink-color;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $pink-color;
+    color: transparentize(#ffffff, 0.7);
+  }
+}
+
+.button--upload-cancel {
+  width: 280px;
+  padding: 15.5px 0;
+  color: #283645;
+  border: 3px solid #283645;
+  border-radius: 30px;
+  opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: transparentize(#ffffff, 0.7);
+    background-color: #283645;
+  }
 }
 
 .button--form {
@@ -63,5 +109,14 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+  }
+
+  &:hover {
+    background-color: #1C9B5E;
+    border-color: #1C9B5E;
+  }
+
+  &:active {
+    color: transparentize(#ffffff, 0.7);
   }
 }

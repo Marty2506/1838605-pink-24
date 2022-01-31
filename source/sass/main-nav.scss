@@ -103,6 +103,15 @@
   text-transform: uppercase;
   text-align: center;
 
+  &:hover {
+    color: $pink-color;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 0;
     padding-left: 0;
@@ -110,6 +119,35 @@
     font-weight: 400;
     text-transform: none;
     background-color: transparent;
+  }
+}
+
+.main-nav__item--current .main-nav__link {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #ffffff;
+    }
+
+    &:hover {
+      &::after {
+        background-color: $pink-color;
+      }
+    }
+
+    &:active {
+      &::after {
+        background-color: #ffffff;
+        opacity: 0.3;
+      }
+    }
   }
 }
 

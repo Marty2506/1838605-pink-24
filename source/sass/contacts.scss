@@ -126,6 +126,19 @@
   text-decoration: none;
 }
 
+.contacts__mail .contacts__text,
+.contacts__phone .contacts__text {
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: transparentize(#283645, 0.7);
+    text-decoration: none;
+  }
+}
+
 .contacts__map iframe {
   height: 200px;
 
