@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .upload__wrapper {
@@ -17,7 +21,6 @@
   padding-top: 20px;
   padding-bottom: 41px;
   align-items: center;
-
 
   @media (max-width: $mobile-width-only) {
     margin-left: 0;
@@ -34,6 +37,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-bottom: 57px;
     gap: 90px;
     background-color: $section-bg;
   }
@@ -120,6 +127,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
+    transform: translate(0, -1px);
   }
 }
 
@@ -138,6 +146,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
+    transform: none;
   }
 }
 
@@ -156,6 +165,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     height: auto;
+    transform: translate(6px, -2px);
   }
 }
 
@@ -188,6 +198,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 92px;
+    padding-right: 28px;
   }
 
   // Походу так не получится из-за разных браузеров

@@ -148,4 +148,11 @@
       top: 57px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 54px;
+      right: 130px;
+    }
+  }
 }
