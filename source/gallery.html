@@ -91,7 +91,7 @@
       <!-- Добавил обертку, чтобы сделать белый фон поверх картинки с домом. Это норм? Можно по-другмоу как-то?-->
       <div class="page-inner__wrapper">
         <div class="container">
-          <p class="page__advice page__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="page__advice page__text">Взгляните на фотографии, которые выкладывают пользователи! <br class="hide-br hide-br--tablet">Видите, как не хватает ваших?</p>
         </div>
 
         <section class="gallery">
@@ -110,9 +110,9 @@
                 <div class="user-post__wrapper">
                   <div class="user-post__name-time">
                     <span class="user-post__name">Анна</span>
-                  <span class="user-post__time">(<time datetime="">5 минут назад</time>)</span>
+                    <span class="user-post__time">(<time datetime="">5 минут назад</time>)</span>
                   </div>
-                  <p class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <p class="user-post__text">Прыгать или нет? Напишите в комментарии свой совет и <br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                   <p class="user-post__likes">
                     <svg class="user-post__like-icon" width="12" height="12">
                       <use xlink:href="img/sprite.svg#like-icon"></use>
@@ -267,13 +267,13 @@
 
         <section class="upload">
           <h2 class="visually-hidden">Загрузить свое изображение</h2>
-          <div class="container">
-            <div class="upload__wrapper">
-              <picture>
-                <source media="(min-width: 660px)" srcset="./img/gallery/upload-tablet.jpg 1x, ./img/gallery/upload-tablet@2x.jpg 2x">
-                <img class="upload__image" src="./img/gallery/upload-mobile.jpg" srcset="./img/gallery/upload-mobile@2x.jpg 2x" alt="">
-              </picture>
-              <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="container upload__wrapper">
+            <picture>
+              <source media="(min-width: 660px)" srcset="./img/gallery/upload-tablet.jpg 1x, ./img/gallery/upload-tablet@2x.jpg 2x">
+              <img class="upload__image" src="./img/gallery/upload-mobile.jpg" srcset="./img/gallery/upload-mobile@2x.jpg 2x" alt="">
+            </picture>
+            <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="upload__form-wrapper">
                 <div class="upload__filter upload__filter--crop upload__filter--active">
                   <label class="visually-hidden" for="image-crop">Обрезка изображения</label>
                   <svg class="upload__filter-icon" width="44" height="44">
@@ -289,19 +289,19 @@
                   <input class="upload__range" type="range" id="image-fill" name="image-fill" min="0" max="255">
                 </div>
                 <div class="upload__filter upload__filter--contrast">
-                  <svg class="upload__filter-icon" width="48" height="43">
+                  <svg class="upload__filter-icon" width="32" height="32">
                     <use xlink:href="img/sprite.svg#contrast-icon"></use>
                   </svg>
                   <label class="visually-hidden" for="image-contrast">Контраст изображения</label>
                   <input class="upload__range" type="range" id="image-contrast" name="image-contrast" min="0" max="255">
                 </div>
-                <!-- Кнопки или ссылки? Должны быть в форме? -->
-                <div class="upload__button-wrapper">
-                  <button class="button button--upload upload__button upload__button--post" type="submit">Запостить</button>
-                  <button class="button button--upload upload__button upload__button--reset" type="reset" disabled>Отмена</button>
-                </div>
-              </form>
-            </div>
+              </div>
+              <!-- Кнопки или ссылки? Должны быть в форме? -->
+              <div class="upload__button-wrapper">
+                <button class="button button--upload upload__button upload__button--post" type="submit">Запостить</button>
+                <button class="button button--upload upload__button upload__button--reset" type="reset" disabled>Отмена</button>
+              </div>
+            </form>
           </div>
         </section>
       </div>

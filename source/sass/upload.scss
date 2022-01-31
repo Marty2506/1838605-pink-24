@@ -1,21 +1,24 @@
 .upload {
+  margin-top: 7px;
+  margin-bottom: 15px;
   @media (max-width: $tablet-width-only) {
     background-color: $section-bg;
   }
 }
 
-.upload__form {
-  position: relative;
-}
-
 .upload__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 42px;
   padding-top: 20px;
   padding-bottom: 41px;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -38,12 +41,24 @@
 .upload__form {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.upload__form-wrapper {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: $min-mobile-width - 2*$page-side-paddings;
+  }
 }
 
 .upload__filter {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid transparentize(#283645, 0.9); // Как на мобилке полосу до краев протянуть?
   overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
@@ -52,6 +67,7 @@
     align-items: center;
     gap: 29px;
     height: 70px;
+    border-bottom: 1px solid transparentize(#283645, 0.9);
   }
 }
 
@@ -116,7 +132,8 @@
 
 .upload__filter--contrast .upload__filter-icon {
   @media (max-width: $mobile-width-only) {
-    right: 35px;
+    top: 6px;
+    right: 49px;
   }
 
   @media (min-width: $tablet-width) {
@@ -132,8 +149,8 @@
 
 .upload__filter--active {
   @media (max-width: $mobile-width-only) {
-    padding-top: 83px;
-    padding-bottom: 39px;
+    padding-top: 81px;
+    padding-bottom: 31px;
   }
 }
 
@@ -191,6 +208,8 @@
 
 .upload__filter--active .upload__range {
   display: block;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .upload__range--contrast {
@@ -198,10 +217,25 @@
 }
 
 .upload__button-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 38px;
+  width: 100%;
+  padding-top: 40px;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1 * $page-side-paddings;
+      right: -1 * $page-side-paddings;
+      height: 1px;
+      background-color: transparentize(#283645, 0.9);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     gap: 24px;

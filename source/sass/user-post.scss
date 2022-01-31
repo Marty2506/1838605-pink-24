@@ -15,13 +15,13 @@
 .user-post__wrapper {
   display: grid;
   grid-template-rows: min-content auto min-content; // Как растянуть второй элемент на все свободное место по другому???
-  gap: 10px;
+  // gap: 10px;
   width: 100%;
   height: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 18px;
+  padding-bottom: 19px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 10px;
   background-color: $user-post-bg;
 
   @media (min-width: $tablet-width) {
@@ -29,6 +29,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.user-post__name-time {
+
 }
 
 .user-post__name {
@@ -42,6 +46,8 @@
 
 .user-post__text {
   margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
 .user-post__likes {
@@ -103,4 +109,26 @@
   @media (min-width: $tablet-width) {
     margin-left: 17px;
   }
+}
+
+.user-post--panorama-of-the-day {
+  position: relative;
+
+  &::after {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: $pink-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
 }
