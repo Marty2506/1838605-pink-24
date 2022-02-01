@@ -286,6 +286,7 @@
   @include make-form-border;
   font: inherit;
   font-size: 18px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     min-height: 194px;
