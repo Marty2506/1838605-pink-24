@@ -21,7 +21,7 @@
   }
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/back-mobile@2x.jpg");
-    background-size: 320px auto; // Как сделать cover и при этом сохранить габариты???
+    background-size: cover;
   }
   background-repeat: no-repeat;
   background-position-x: center;

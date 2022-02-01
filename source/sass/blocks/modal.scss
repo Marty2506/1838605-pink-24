@@ -1,0 +1,125 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.modal--open {
+  display: flex;
+}
+
+.modal__wrapper {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding-top: 38px;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-width: 460px;
+    padding-top: 41px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+  }
+}
+
+.modal__header {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__message-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 41px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 550px;
+    margin-bottom: 63px;
+  }
+}
+
+.modal__message {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.modal__button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    background-color: $body-second-bg;
+  }
+}
+
+.modal--success .modal__message-wrapper{
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.modal--success .modal__button-wrapper {
+  padding-top: 50px;
+  background-color: $body-second-bg;
+}
+
+.modal--success .modal__button {
+  width: 460px;
+}
+
