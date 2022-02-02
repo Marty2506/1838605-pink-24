@@ -160,8 +160,8 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
 
-  &:hover {
-
-  }
+.main-nav__toggle--no-js {
+  display: none;
 }

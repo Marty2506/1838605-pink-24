@@ -186,3 +186,17 @@
     margin-bottom: 0px;
   }
 }
+
+.contacts__map img {
+  display: none;
+}
+
+.contacts__map--no-js iframe {
+  display: none;
+}
+
+.contacts__map--no-js img {
+  display: flex;
+  width: 100%;
+  object-fit: cover;
+}

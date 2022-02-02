@@ -55,7 +55,7 @@
 }
 
 
-.logo--mobile {
+.logo__mobile {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -63,11 +63,11 @@
   }
 }
 
-.logo--footer .logo--mobile {
+.logo--footer .logo__mobile {
   display: none;
 }
 
-.logo--tablet {
+.logo__tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -79,7 +79,7 @@
   }
 }
 
-.logo--footer .logo--tablet {
+.logo--footer .logo__tablet {
   display: block;
 
   @media (min-width: $desktop-width) {
@@ -87,7 +87,7 @@
   }
 }
 
-.logo--desktop {
+.logo__desktop {
   display: none;
 
   @media (min-width: $desktop-width) {

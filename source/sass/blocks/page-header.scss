@@ -2,8 +2,13 @@
   z-index: 1;
   position: absolute;
   width: 100%;
-
   background-color: $page-header-bg;
+}
+
+.page-header--no-js {
+  @media (max-width: $tablet-width-only) {
+    position: static;
+  }
 }
 
 .page-header__wrapper {

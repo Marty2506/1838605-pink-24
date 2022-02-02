@@ -1,6 +1,8 @@
 .download {
   color: #ffffff;
+}
 
+.download__hand {
   @media (max-resolution: 1dppx) {
     background-image: url("../img/download-back-mobile.png");
   }
@@ -9,7 +11,7 @@
     background-size: 320px auto;
   }
   background-repeat: no-repeat;
-  background-position: 0 175px;
+  background-position: 50% 175px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -20,7 +22,7 @@
       background-image: url("../img/download-back-tablet@2x.png");
       background-size: 660px auto;
     }
-    background-position: 0 100%;
+    background-position: 50% 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +33,7 @@
       background-image: url("../img/download-back-desktop@2x.png");
       background-size: 1050px auto;
     }
-    background-position: 98% 100%;
+    background-position: calc(50% + 71px) 100%;
   }
 }
 
@@ -127,7 +129,7 @@
   }
 }
 
-.downlaod__list {
+.download__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -181,13 +183,10 @@
   background-image: url("../img/microsoft-logo.svg");
 }
 
-.download__info-wrapper {
-  // margin: 0 auto;
-}
-
 .download__info {
   display: inline-block;
   text-align: center;
+  word-break: break-all;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
