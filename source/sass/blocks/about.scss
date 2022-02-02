@@ -1,7 +1,3 @@
-.about {
-
-}
-
 .about__wrapper {
   display: flex;
   flex-direction: column;
@@ -56,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 68px;
   }
 }
@@ -148,7 +144,6 @@
 }
 
 .about__item:nth-child(3)::after {
-
   @media (max-width: $mobile-width-only) {
     background-image: url("../img/about-iphone3-mobile.png");
   }
@@ -198,7 +193,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 240px;;
+    max-width: 240px;
     font-size: 18px;
     line-height: 30px;
     text-align: center;

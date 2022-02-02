@@ -1,7 +1,3 @@
-.copyright {
-
-}
-
 .copyright__wrapper {
   display: flex;
   align-items: center;
@@ -28,14 +24,13 @@
   border: none;
 
   &:hover .copyright__icon {
-    fill: black;
+    fill: #000000;
   }
 
   &:active .copyright__icon {
-    fill: black;
+    fill: #000000;
     opacity: 0.3;
   }
-
 }
 
 .copyright__icon {

@@ -6,6 +6,7 @@
   @media (max-resolution: 1dppx) {
     background-image: url("../img/download-back-mobile.png");
   }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/download-back-mobile@2x.png");
     background-size: 320px auto;
@@ -15,9 +16,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+
     @media (max-resolution: 1dppx) {
       background-image: url("../img/download-back-tablet.png");
     }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/download-back-tablet@2x.png");
       background-size: 660px auto;
@@ -29,6 +32,7 @@
     @media (max-resolution: 1dppx) {
       background-image: url("../img/download-back-desktop.png");
     }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/download-back-desktop@2x.png");
       background-size: 1050px auto;

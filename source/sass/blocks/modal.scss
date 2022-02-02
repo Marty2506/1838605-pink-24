@@ -19,7 +19,7 @@
   margin: auto;
   padding-top: 38px;
   background-color: #ffffff;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
   overflow: hidden;
 
@@ -102,7 +102,7 @@
   }
 }
 
-.modal--success .modal__message-wrapper{
+.modal--success .modal__message-wrapper {
   margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
@@ -122,4 +122,3 @@
 .modal--success .modal__button {
   width: 460px;
 }
-

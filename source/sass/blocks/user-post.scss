@@ -7,15 +7,12 @@
 .user-post__photo {
   display: block;
   justify-self: center;
-  // object-fit: contain;
-  // margin: 0 auto;
-  width: 100%; // Картинкуа стремно растягивается. Забить и оставить так или ограничить максимальной шириной картинки?
+  width: 100%;
 }
 
 .user-post__wrapper {
   display: grid;
-  grid-template-rows: min-content min-content auto; // Как растянуть второй элемент на все свободное место по другому???
-  // gap: 10px;
+  grid-template-rows: min-content min-content auto;
   width: 100%;
   height: 100%;
   padding-top: 18px;
@@ -31,10 +28,6 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-
-.user-post__name-time {
-
 }
 
 .user-post__name {
@@ -83,10 +76,6 @@
     margin-right: 0;
     order: 2;
   }
-}
-
-.user-post__likes-counter {
-
 }
 
 .user-post--panorama {

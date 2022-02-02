@@ -21,7 +21,6 @@
   @media (max-width: $mobile-width-only) {
     @include reset-side-paddings();
   }
-
 }
 
 .tariffs__table-wrapper {
@@ -43,10 +42,6 @@
   }
 }
 
-.tariffs__row {
-
-}
-
 .tariffs__item {
   min-width: 276px;
   padding: 0;
@@ -55,11 +50,10 @@
   background-color: #283645;
   color: #ffffff;
   line-height: 30px;
-  // border: 1px solid tomato;
-
 
   &:first-of-type {
     background-color: transparent;
+
     @media (max-width: $mobile-width-only) {
       display: none;
     }
@@ -94,7 +88,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     &::after {
-      transform: translate(0px, 0px);
+      transform: translate(0, 0);
       width: 61px;
       height: 61px;
       background-image: url("../img/hit-tablet.svg");
@@ -125,7 +119,6 @@
 }
 
 .tariffs__feature {
-  // height: 59px; // min-height не работает почему-то
   font-weight: 400;
   line-height: 30px;
   background-color: #ffffff;
@@ -179,7 +172,6 @@
   }
 }
 
-// Неуниверсальный метод, т.к. приходится прописывать название из таблички вручную, переделать потом
 .tariffs__row--pink .tariffs__feature-wrapper {
   &::before {
     @media (max-width: $mobile-width-only) {

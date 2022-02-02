@@ -1,6 +1,7 @@
 .upload {
   margin-top: 7px;
   margin-bottom: 15px;
+
   @media (max-width: $tablet-width-only) {
     background-color: $section-bg;
   }
@@ -183,8 +184,7 @@
 
 
 .upload__range {
-  // width: 100%;
-  flex-grow: 1; // был width: 100%, но он уменьшал размер рядом стоящей иконки. Так норм?
+  flex-grow: 1;
   -webkit-appearance: none;
   background-color: transparent;
 
@@ -201,7 +201,6 @@
     padding-right: 28px;
   }
 
-  // Походу так не получится из-за разных браузеров
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     top: 0;
@@ -221,14 +220,6 @@
   }
 }
 
-.upload__range--crop {
-
-}
-
-.upload__range--fill {
-
-}
-
 .upload__filter--active .upload__range {
   display: block;
 
@@ -236,10 +227,6 @@
     padding-left: 18px;
     padding-right: 18px;
   }
-}
-
-.upload__range--contrast {
-
 }
 
 .upload__button-wrapper {
@@ -272,16 +259,4 @@
     flex-direction: row;
     gap: 44px;
   }
-}
-
-.upload__button {
-
-}
-
-.upload__button--post {
-
-}
-
-.upload__button--reset {
-
 }
