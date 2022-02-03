@@ -1,5 +1,29 @@
 $section-bg: #f2f2f2;
 
 .section-background {
+  position: relative;
   background-color: $section-bg;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 150px;
+    background-image: url("../img/grey-background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      top: -54px;
+      background-image: url("../img/grey-background.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -100px;
+    }
+  }
 }

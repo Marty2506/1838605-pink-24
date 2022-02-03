@@ -16,7 +16,7 @@
   color: $font-color-typical;
 }
 
-.page__h1-wrapper {
+.page__title-wrapper {
   min-height: 237px;
   padding-top: 94px;
 
@@ -29,16 +29,6 @@
     min-height: 394px;
     padding-top: 169px;
   }
-}
-
-.page__h1 {
-  display: block;
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  text-align: center;
 }
 
 .page__text {
