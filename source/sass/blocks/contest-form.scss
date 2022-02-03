@@ -49,8 +49,6 @@
 .contest-form__label--phone {
   position: relative;
 
-  // Дурацкая ситуация. Инпуту нельзя добавить ::after, а если ему добавлять обертку html валидатор выдает ошибку.
-  // Сделал так, но некрасиво из-за того, что при увеличении размеров инпута все сломается
   @media (min-width: $tablet-width) {
     &::after {
       content: "";
@@ -254,7 +252,6 @@
 
   @media (max-width: $mobile-width-only) {
     float: left;
-    // padding-top: 39px;
   }
 
   @media (min-width: $tablet-width) {

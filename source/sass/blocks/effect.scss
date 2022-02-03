@@ -56,16 +56,6 @@
   }
 }
 
-.effect__title br {
-  @media (min-width: $desktop-width) {
-    // content: ' ';
-
-    // &::after {
-    //   content: ' ';
-    // }
-  }
-}
-
 .effect__text {
   width: 296px;
   margin: 0;
@@ -79,12 +69,6 @@
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
-  }
-}
-
-.effect__text br {
-  @media (min-width: $desktop-width) {
-    // display: none;
   }
 }
 
