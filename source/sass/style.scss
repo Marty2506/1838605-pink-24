@@ -3,10 +3,10 @@
 @import "./mixin.scss";
 @import "./fonts.scss";
 //
-@import "./blocks/visually-hidden.scss";
+@import "./support/visually-hidden.scss";
+@import "./support/hide-mobile.scss";
+@import "./support/hide-br.scss";
 @import "./blocks/container.scss";
-@import "./blocks/hide-mobile.scss";
-@import "./blocks/hide-br.scss";
 @import "./blocks/main-bg.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-main.scss";
