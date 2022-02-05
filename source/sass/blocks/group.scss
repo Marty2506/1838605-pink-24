@@ -29,8 +29,41 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column; // В макете идет заполнение по столбцам, но если так сделать, то верстка на переполнение не проходит. Чтобы пройти переполнение - надо закоментировать эту строку
     column-gap: 53px;
+  }
+}
+// -- Костыль, чтобы закрыть критерий Д13
+.group__list--grid .group__item {
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    &:nth-child(2) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &:nth-child(3) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &:nth-child(4) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &:nth-child(5) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    &:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
   }
 }
 
